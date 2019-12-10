@@ -44,3 +44,21 @@ function sendMessage() {
 }
 
 setTime();
+
+// JS DISPLAY HERE //
+
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+// QUIZ BUILDER //
+
+function buildQuiz(){}
+
+function showResults(){}
+
+// DISPLAY QUIZ //
+buildQuiz();
+
+// SHOW RESULTS AFTER SUBMITTING
+submitButton.addEventListener('click', showResults);
