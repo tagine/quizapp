@@ -1,3 +1,5 @@
+// INTERVAL FUNCTION //
+
 function integerAt(x) {
     var sum = 0;
     for(var i = 1; i <= x; i++)
@@ -14,10 +16,12 @@ var mainEl = document.getElementById("main");
 
 var secondsLeft = 10;
 
+// TIMER FUNCTION // 
+
 function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    timeEl.textContent = secondsLeft + " seconds left for this question.";
 
     if(secondsLeft === 0) {
       clearInterval(timerInterval);
@@ -26,6 +30,8 @@ function setTime() {
 
   }, 1000);
 }
+
+// TIMER MESSAGE FUNCTION //
 
 function sendMessage() {
   timeEl.textContent = " ";
