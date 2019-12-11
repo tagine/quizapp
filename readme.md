@@ -63,4 +63,45 @@ H1, image, bg image, H1 quiz name, welcome
 
 "this" is your representation of the scope of the object
 
+//QUIZ CONTENT//
+
+Who produced Janet Jackson's first LP?
+
+a. Larry Levan
+b. Giorgio Moroder
+c. Timbaland
+d. Prince
+
+What was the name of Janet's first LP?
+
+a. Dream Street
+b. Control
+c. The Velvet Rope
+d. Janet
+
+
+How many albums has Janet released?
+
+a. 4
+b. 9
+c. 11
+d. 20
+
+
+Where is Janet Jackson from?
+
+a. Philadelphia, PA
+b. Skokie, IL
+c. Gary, IN
+d. Beaverton, OR
+
+
+What soundtrack was Janet Jackson's music featured on?
+
+a. The Nutty Professor
+b. Die Hard
+c. Armageddon
+d. Face Off
+
+
  -->
