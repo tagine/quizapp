@@ -6,13 +6,13 @@
 
 /* RESPONSIVENESS */
 
-@media screen and (min-width: 1000px) and (min-height: 673px) {
+/* @media screen and (min-width: 1000px) and (min-height: 673px) {
     .container {
       width: 65%;
     }
-  }
+  } */
 
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) { */
     .container {
       display: initial;
     }
@@ -24,10 +24,11 @@
     align-items: center;
     /* background image used */
     
-    background: linear-gradient(#818182,rgba(0,123,255,.5)), url(/assets/janetjackson.jpeg) center / cover no-repeat;
+    background: linear-gradient(#818182,rgba(0,123,255,.5)), url(assets/janetjackson.jpeg) center / cover no-repeat;
     }
 
      .container {
         width: 85%;
         display: flex;
-     };
+  }
+/* }; */

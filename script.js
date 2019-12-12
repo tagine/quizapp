@@ -5,33 +5,61 @@ function integerAt(x) {
     for(var i = 1; i <= x; i++)
         sum += i
 }
-console.log(sum)
 
-}
+// $(document).ready(function() {
 
-integerAt(10);
 
-var timeEl = document.querySelector(".time");
-var mainEl = document.getElementById("main");
+  $("#begin").on("click", function() {
+    alert("Quiz should be starting by now!");
+    $("#imgcontainer").empty();
+    renderQuestion();
+  });
 
-var secondsLeft = 10;
+  $(document).on("click", ".submit", function() {
+    console.log("hello");
+    questCounter++;
+    renderQuestion();
+  });
 
-// TIMER FUNCTION // 
+  //RENDER QUESTIONS ON PAGE//
 
-function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left for this question.";
+  function renderQuestion(){
+    $("#quiz").html(`
+      <h3>Question: </h3><p>${myQuestions[questCounter].question}</p>
+      <h4>Option 1: </h4><p>${myQuestions[questCounter].answers.a}</p>
+      <button class="submit">Submit answer!</button>
+    `)
+  }
 
-    if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      sendMessage();
-    }
+//CREATE OPTIONS FOR ALL//
 
-  }, 1000);
-}
+// integerAt(10);
 
-//QUESTION OPTIONS//
+// var timeEl = document.querySelector(".time");
+// var mainEl = document.getElementById("main");
+
+// var secondsLeft = 10;
+
+// // TIMER FUNCTION // 
+
+// function setTime() {
+//   var timerInterval = setInterval(function() {
+//     secondsLeft--;
+//     timeEl.textContent = secondsLeft + " seconds left for this question.";
+
+//     if(secondsLeft === 0) {
+//       clearInterval(timerInterval);
+//       sendMessage();
+//     }
+//     console.log(setTime)
+//     console.log(timeEl)
+
+//   }, 1000);
+// }
+
+// localStorage.clickcount = 1;
+
+// //QUESTION OPTIONS//
 
 const myQuestions = [
   {
@@ -78,40 +106,45 @@ const myQuestions = [
       c: "Face Off",
     },
     correctAnswer: "a"
-  }
+  },
 ];
 
+questCounter = 0
 
-// TIMER MESSAGE FUNCTION //
+console.log(myQuestions)
 
-function sendMessage() {
-  timeEl.textContent = " ";
 
-  var imgEl = document.createElement("img");
+// // TIMER MESSAGE FUNCTION //
 
-  imgEl.setAttribute("src", "images/image_1.jpg");
-  mainEl.appendChild(imgEl);
+// function sendMessage() {
+//   timeEl.textContent = " ";
 
-}
+//   var imgEl = document.createElement("img");
 
-setTime();
+//   imgEl.setAttribute("src", "images/image_1.jpg");
+//   mainEl.appendChild(imgEl);
 
-// JS DISPLAY HERE //
+// }
 
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
+// setTime();
 
-document.getElementById('quiz');
+// // JS DISPLAY HERE //
 
-// QUIZ BUILDER //
+// const quizContainer = document.getElementById('quiz');
+// const resultsContainer = document.getElementById('results');
+// const submitButton = document.getElementById('submit');
 
-function buildQuiz(){}
+// startQuiz.addEventListener('click', showResults);
+// document.getElementById('quiz');
 
-function showResults(){}
+// // QUIZ BUILDER //
 
-// DISPLAY QUIZ //
-buildQuiz();
+// function buildQuiz(){}
 
-// SHOW RESULTS AFTER SUBMITTING
-submitButton.addEventListener('click', showResults);
+// function showResults(){}
+
+// // DISPLAY QUIZ //
+// buildQuiz();
+
+// // SHOW RESULTS AFTER SUBMITTING
+// submitButton.addEventListener('click', showResults);
