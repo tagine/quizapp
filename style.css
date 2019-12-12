@@ -6,6 +6,7 @@
 
 h1 {
     color: #ffffff;
+    position: center;
 
 }
 
@@ -38,7 +39,8 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background image used */
+    
+    /* BG IMAGE JANET IS WATCHING YOU */
     
     background: linear-gradient(#818182,rgba(0,123,255,.5)), url(assets/janetjackson.jpeg) center / cover no-repeat;
     }

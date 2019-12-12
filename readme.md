@@ -111,5 +111,8 @@ b. Die Hard
 c. Armageddon
 d. Face Off
 
+NEED HELP WITH
+-How do I assign values to each button?
+-How do I get the counter to work with each button?
 
  -->
