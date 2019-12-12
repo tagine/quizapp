@@ -31,6 +31,57 @@ function setTime() {
   }, 1000);
 }
 
+//QUESTION OPTIONS//
+
+const myQuestions = [
+  {
+    question: "Who produced Janet Jackson's first LP?",
+    answers: {
+      a: "Larry Levan",
+      b: "Giorgio Moroder",
+      c: "Prince"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What was the name of Janet's first LP?",
+    answers: {
+      a: "Dream Street",
+      b: "Control",
+      c: "Janet"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "How many albums has Janet released",
+    answers: {
+      a: "4",
+      b: "9",
+      c: "11",
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Where is Janet from?",
+    answers: {
+      a: "Philadelphia, PA",
+      b: "Skokie, IL",
+      c: "Gary, IN",
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "What movie soundtrack was Janet Jackson's music featured on?",
+    answers: {
+      a: "The Nutty Professor",
+      b: "Die Hard",
+      c: "Face Off",
+    },
+    correctAnswer: "a"
+  }
+];
+
+
 // TIMER MESSAGE FUNCTION //
 
 function sendMessage() {
