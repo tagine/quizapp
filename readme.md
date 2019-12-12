@@ -2,8 +2,9 @@
 
 ## USER STORY
 
-- I want to test my knowledge
-- I need set a time limit for myself 
+- I am the ultimate Janet Jackson fan
+- I want to prove it
+- I don't have all day to prove it, so it needs to be limited in time
 
 ## App
 [Link to app] (http://tagine.github.io/quizapp)
