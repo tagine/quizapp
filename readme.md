@@ -7,8 +7,10 @@
 - I don't have all day to prove it, so it needs to be limited in time
 
 ## App
-[Link to app] (http://tagine.github.io/quizapp)
-![](quizapp.png)
+![Link to app] (http://tagine.github.io/quizapp)
+![screenshot of program](quizapp.png)
+
+
 
 
 <!-- Notes to self:
