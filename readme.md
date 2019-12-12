@@ -8,6 +8,8 @@
 
 ## App
 [Link to app] (http://tagine.github.io/quizapp)
+![Janet Jackson](./assets/janetjackson.jpeg)
+
 
 <!-- Notes to self:
 
