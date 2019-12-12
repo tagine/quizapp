@@ -6,9 +6,12 @@
 - I want to prove it
 - I don't have all day to prove it, so it needs to be limited in time
 
+## Screenshot
+![screenshot of program](quizapp.png)
+
 ## App
 ![Link to app] (http://tagine.github.io/quizapp)
-![screenshot of program](quizapp.png)
+
 
 
 
