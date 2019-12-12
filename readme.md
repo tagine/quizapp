@@ -8,7 +8,6 @@
 
 ## App
 [Link to app] (http://tagine.github.io/quizapp)
-![](./assets/janetjackson.jpeg | height=250)
 
 
 <!-- Notes to self:
