@@ -10,12 +10,12 @@ function integerAt(x) {
 
 
   $("#begin").on("click", function() {
-    alert("Quiz should be starting by now!");
     $("#imgcontainer").empty();
+    $("begin").empty();
     renderQuestion();
   });
 
-  $(document).on("click", ".submit", function() {
+  $(document).on("click", "button", function() {
     console.log("hello");
     questCounter++;
     renderQuestion();
@@ -25,11 +25,10 @@ function integerAt(x) {
 
   function renderQuestion(){
     $("#quiz").html(`
-      <h3>Question: </h3><p>${myQuestions[questCounter].question}</p>
-      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.a}</p>
-      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.b}</p>
-      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.c}</p>
-      <button class="submit">Submit answer!</button>
+      <h5>Question: </h5><p>${myQuestions[questCounter].question}</p>
+      <p><button>${myQuestions[questCounter].answers.a}</button></p>
+      <p><button>${myQuestions[questCounter].answers.b}</button></p>
+      <p><button>${myQuestions[questCounter].answers.c}</button></p>
     `)
   }
 
