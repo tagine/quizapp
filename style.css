@@ -4,6 +4,22 @@
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    color: #ffffff;
+
+}
+
+h3, h6 {
+    color: #ffffff;
+
+}
+
+button:hover {
+    color: #FF1493;
+    
+}
+
+
 /* RESPONSIVENESS */
 
 /* @media screen and (min-width: 1000px) and (min-height: 673px) {
@@ -26,6 +42,8 @@
     
     background: linear-gradient(#818182,rgba(0,123,255,.5)), url(assets/janetjackson.jpeg) center / cover no-repeat;
     }
+
+
 
      .container {
         width: 85%;
