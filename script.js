@@ -26,7 +26,9 @@ function integerAt(x) {
   function renderQuestion(){
     $("#quiz").html(`
       <h3>Question: </h3><p>${myQuestions[questCounter].question}</p>
-      <h4>Option 1: </h4><p>${myQuestions[questCounter].answers.a}</p>
+      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.a}</p>
+      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.b}</p>
+      <h4>Option 1: </h4><p><input type=radio>${myQuestions[questCounter].answers.c}</p>
       <button class="submit">Submit answer!</button>
     `)
   }

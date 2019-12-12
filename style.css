@@ -31,4 +31,15 @@
         width: 85%;
         display: flex;
   }
+
+  footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: #60B0AF;
+    height: 100px;
+  }
+
 /* }; */
