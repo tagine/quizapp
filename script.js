@@ -91,15 +91,22 @@ $(document).on("click", "button.answers", function (event) {
       if (secondsLeft === 0) {
         clearInterval(timerInterval);
       }
+
+      if (timerInterval < 0) {
+        $("#quiz").html("You failed!");
+      };
+
       console.log(setTime)
       console.log(timeEl)
 
     }, 1000);
   }
 
-  localStorage.results = 1;
+  
 
-  // //QUESTION OPTIONS//
+  // localStorage.results = 1;
+
+  //QUESTION OPTIONS//
 
   const myQuestions = [
     {
@@ -147,25 +154,21 @@ $(document).on("click", "button.answers", function (event) {
       },
       correctAnswer: "The Nutty Professor"
     },
+    {
+      question: "This quiz is now complete!",
+    },
   ];
 
   
 
   console.log(myQuestions);
   console.log(myQuestions.correctAnswer);
-
+  console.log("This is local storage", localStorage);
+  
+  localStorage.setItem(".time", "questCounter");
+  localStorage.getItem(".time");
 
   // // TIMER MESSAGE FUNCTION //
-
-  // function sendMessage() {
-  //   timeEl.textContent = " ";
-
-  //   var imgEl = document.createElement("img");
-
-  //   imgEl.setAttribute("src", "images/image_1.jpg");
-  //   mainEl.appendChild(imgEl);
-
-  // }
 
   // setTime();
 
