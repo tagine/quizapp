@@ -36,7 +36,6 @@ if (questCounter === 5) {
 // IF BUTTON VALUE INDEX IS A PARTICULAR ONE OF AN ARRAY, THEN YOU ADD POINTS TO TIMER. IF NOT, DEDUCT POINTS//
 
 $(document).on("click", "button.answers", function (event) {
-  debugger
   var button = event.target.innerText;
   if (myQuestions[questCounter].correctAnswer === button) {
     // increment the score
@@ -97,7 +96,7 @@ $(document).on("click", "button.answers", function (event) {
     }, 1000);
   }
 
-  // localStorage.clickcount = 1;
+  localStorage.results = 1;
 
   // //QUESTION OPTIONS//
 
