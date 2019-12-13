@@ -58,7 +58,7 @@ $(document).on("click", "button.answers", function (event) {
 
   function renderQuestion() {
     $("#quiz").html(`
-      <h5>Question: </h5><p>${myQuestions[questCounter].question}</p>
+      <p>${myQuestions[questCounter].question}</p>
       <p><button class="answers">${myQuestions[questCounter].answers.a}</button></p>
       <p><button class="answers">${myQuestions[questCounter].answers.b}</button></p>
       <p><button class="answers">${myQuestions[questCounter].answers.c}</button></p>
