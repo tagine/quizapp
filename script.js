@@ -50,7 +50,8 @@ $(document).on("click", "button.answers", function (event) {
   // IF ON LAST PAGE, DISPLAY RESULTS ON NEW PAGE //
 
   if (questCounter === 5) {
-    (this.questCounter)
+    (this.questCounter);
+    alert(results);
   };
 
   //RENDER QUESTIONS ON PAGE//
@@ -117,7 +118,7 @@ $(document).on("click", "button.answers", function (event) {
         b: "Control",
         c: "Janet"
       },
-      correctAnswer: "a"
+      correctAnswer: "Dream Street"
     },
     {
       question: "How many albums has Janet released",
@@ -126,7 +127,7 @@ $(document).on("click", "button.answers", function (event) {
         b: "9",
         c: "11",
       },
-      correctAnswer: "c"
+      correctAnswer: "11"
     },
     {
       question: "Where is Janet from?",
@@ -135,7 +136,7 @@ $(document).on("click", "button.answers", function (event) {
         b: "Skokie, IL",
         c: "Gary, IN",
       },
-      correctAnswer: "c"
+      correctAnswer: "Gary, IN"
     },
     {
       question: "What movie soundtrack was Janet Jackson's music featured on?",
@@ -144,7 +145,7 @@ $(document).on("click", "button.answers", function (event) {
         b: "Die Hard",
         c: "Face Off",
       },
-      correctAnswer: "a"
+      correctAnswer: "The Nutty Professor"
     },
   ];
 
