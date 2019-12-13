@@ -12,7 +12,10 @@ h1 {
 
 h3, h6, p {
     color: #ffffff;
+}
 
+p {
+    padding: 5px;
 }
 
 button {
@@ -31,6 +34,10 @@ button:hover {
 
 .time {
     color: #ffffff;
+}
+
+img {
+    padding: 20px;
 }
 
 /* RESPONSIVENESS */
