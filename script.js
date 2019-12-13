@@ -184,17 +184,6 @@ $(document).on("click", "button.answers", function (event) {
   // const resultsContainer = document.getElementById('results');
   // const submitButton = document.getElementById('submit');
 
-  // startQuiz.addEventListener('click', showResults);
-  // document.getElementById('quiz');
-
-  // // QUIZ BUILDER //
-
-  // function buildQuiz(){}
-
-  // function showResults(){}
-
-  // // DISPLAY QUIZ //
-  // buildQuiz();
-
-  // // SHOW RESULTS AFTER SUBMITTING
-  // submitButton.addEventListener('click', showResults);
+  // SHOW RESULTS AFTER SUBMITTING
+  
+  submitButton.addEventListener('click', showResults);
