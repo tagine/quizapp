@@ -102,6 +102,12 @@ $(document).on("click", "button.answers", function (event) {
     }, 1000);
   }
 
+  $("#begin").on("click", function () {
+    $("#imgcontainer").empty();
+    $("#begin").remove();
+    renderQuestion();
+    setTime();
+  });
   
 
   // localStorage.results = 1;
