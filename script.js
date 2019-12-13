@@ -93,7 +93,9 @@ $(document).on("click", "button.answers", function (event) {
       }
 
       if (timerInterval < 0) {
-        $("#quiz").html("You failed!");
+        function myStopFunction() {
+          clearInterval(myVar);
+        }
       };
 
       console.log(setTime)
@@ -173,6 +175,7 @@ $(document).on("click", "button.answers", function (event) {
   
   localStorage.setItem(".time", "questCounter");
   localStorage.getItem(".time");
+  
 
   // // TIMER MESSAGE FUNCTION //
 
@@ -186,4 +189,9 @@ $(document).on("click", "button.answers", function (event) {
 
   // SHOW RESULTS AFTER SUBMITTING
   
-  submitButton.addEventListener('click', showResults);
+  // submitButton.addEventListener('click', showResults);
+
+  // function append() {
+  //   $("#quiz").html(`
+  //   <p>$ ("localStorage");</p>
+  //   `)
