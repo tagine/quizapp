@@ -29,6 +29,10 @@ button:hover {
 }
 
 
+.time {
+    color: #ffffff;
+}
+
 /* RESPONSIVENESS */
 
 /* @media screen and (min-width: 1000px) and (min-height: 673px) {
